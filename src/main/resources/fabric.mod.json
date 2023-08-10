@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "plugin-template",
+  "version": "${version}",
+  "name": "Plugin Template",
+  "authors": [
+    "ya-ilya"
+  ],
+  "environment": "client",
+  "entrypoints": {
+    "progreso": [
+      "com.example.plugin.Plugin"
+    ]
+  },
+  "mixins": [
+    "plugin-template.mixins.json"
+  ]
+}
