@@ -1,3 +1,5 @@
 {
-  "module.example.description": "Пример модуля"
+  "command.example.description": "Приер команды",
+
+  "module.Example.description": "Пример модуля"
 }

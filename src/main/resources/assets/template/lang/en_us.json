@@ -1,3 +1,5 @@
 {
-  "module.example.description": "Example module"
+  "command.example.description": "Example command",
+
+  "module.Example.description": "Example module"
 }

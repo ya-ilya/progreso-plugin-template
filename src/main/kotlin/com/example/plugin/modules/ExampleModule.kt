@@ -6,7 +6,6 @@ import org.progreso.api.module.Category
 
 @AbstractModule.Register("Example", Category.Misc)
 object ExampleModule : AbstractModule() {
-
     init {
         onEnable {
             Api.CHAT.info("Example module enabled")
