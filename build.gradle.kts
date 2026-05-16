@@ -2,14 +2,13 @@ val pluginGroup: String by project
 val pluginVersion: String by project
 val progresoVersion: String by project
 val minecraftVersion: String by project
-val yarnMappings: String by project
 val loaderVersion: String by project
 val fabricVersion: String by project
 val fabricKotlinVersion: String by project
 
 plugins {
     kotlin("jvm")
-    id("fabric-loom")
+    id("net.fabricmc.fabric-loom")
 }
 
 group = pluginGroup
@@ -22,11 +21,10 @@ repositories {
 
 dependencies {
     "minecraft"("com.mojang:minecraft:$minecraftVersion")
-    "mappings"("net.fabricmc:yarn:$yarnMappings:v2")
 
-    modImplementation("net.fabricmc:fabric-loader:$loaderVersion")
-    modImplementation("net.fabricmc.fabric-api:fabric-api:$fabricVersion")
-    modImplementation("net.fabricmc:fabric-language-kotlin:$fabricKotlinVersion")
+    implementation("net.fabricmc:fabric-loader:$loaderVersion")
+    implementation("net.fabricmc.fabric-api:fabric-api:$fabricVersion")
+    implementation("net.fabricmc:fabric-language-kotlin:$fabricKotlinVersion")
 
     implementation("com.github.ya-ilya:progreso:$progresoVersion")
 }

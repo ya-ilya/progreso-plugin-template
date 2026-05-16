@@ -6,12 +6,12 @@ pluginManagement {
 
     repositories {
         mavenCentral()
-        maven("https://maven.fabricmc.net/")
         gradlePluginPortal()
+        maven("https://maven.fabricmc.net/")
     }
 
     plugins {
         kotlin("jvm") version kotlinVersion
-        id("fabric-loom") version fabricLoomVersion
+        id("net.fabricmc.fabric-loom") version fabricLoomVersion
     }
 }
